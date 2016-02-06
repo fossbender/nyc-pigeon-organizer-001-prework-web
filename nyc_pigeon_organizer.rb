@@ -6,6 +6,7 @@ def nyc_pigeon_organizer(data)
   data.each do | key, value |
     pigeons << value.values
   end
+
  pigeon_hash = Hash[pigeons.flatten.collect { |name| [name, {}] } ]
 
     data.each do |key, value|
